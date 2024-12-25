@@ -1,0 +1,101 @@
+/* src/components/AppointmentBooking.css */
+:root{
+  background:linear-gradient(135deg, #012b45, #48628f);
+   color:"white"
+}
+.appointment-booking {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #0c1d38;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-booking h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.nav a {
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #012b45;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav a:hover {
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking-form label {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.booking-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .appointment-booking {
+    padding: 1rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .appointment-booking h2 {
+    font-size: 1.5rem;
+  }
+
+  .booking-form label {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 0.8rem;
+  }
+}

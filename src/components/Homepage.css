@@ -1,0 +1,145 @@
+/* src/components/Homepage.css */
+:root {
+  --primary-color: #112f43;
+  --secondary-color: #fff;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ddd;
+}
+
+.login-btn {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #eee;
+}
+
+.hero-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #012b45, #48628f);
+  color: var(--secondary-color);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.cta-btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #eee;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 0.5rem 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+}

@@ -1,0 +1,62 @@
+/* src/components/LecturerDashboard.css */
+.lecturer-dashboard {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lecturer-dashboard h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .lecturer-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  .lecturer-dashboard th,
+  .lecturer-dashboard td {
+    text-align: left;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+  }
+  
+  .lecturer-dashboard th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .lecturer-dashboard td {
+    background-color: #f9f9f9;
+  }
+  
+  .lecturer-dashboard button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .lecturer-dashboard button:first-child {
+    background-color: #4caf50;
+  }
+  
+  .lecturer-dashboard button:last-child {
+    background-color: #f44336;
+  }
+  
+  .lecturer-dashboard .calendar-view {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f0f4f8;
+    border: 1px dashed #ccc;
+  }
+  

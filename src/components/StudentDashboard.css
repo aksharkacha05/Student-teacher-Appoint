@@ -1,0 +1,38 @@
+/* src/components/StudentDashboard.css */
+.student-dashboard {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-dashboard h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .student-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  .student-dashboard th,
+  .student-dashboard td {
+    text-align: left;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+  }
+  
+  .student-dashboard th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .student-dashboard td {
+    background-color: #f9f9f9;
+  }
+  
