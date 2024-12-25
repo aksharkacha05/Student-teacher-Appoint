@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../util/firebase"; // Adjust the path as needed
 import "./StudentDashboard.css";
@@ -47,7 +47,7 @@ const StudentDashboard = () => {
       <RedirectToAppointmentsButton/>
       <h2>Student Dashboard</h2>
       <section>
-        <h3>Your appointments:</h3>
+        <h3>Your appointments:{upcomingAppointments}</h3>
         <table>
           <thead>
             <tr>
@@ -59,7 +59,7 @@ const StudentDashboard = () => {
           </thead>
           <tbody>
             {history.length > 0 ? (
-              history.map((appointment, index) => (
+              history.map((appointment) => (
                 <tr key={appointment.id}>
                   <td>{appointment.teacher}</td>
                   <td>{appointment.date}</td>

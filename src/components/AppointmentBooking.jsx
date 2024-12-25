@@ -1,5 +1,5 @@
 // src/components/AppointmentBooking.js
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./AppointmentBooking.css";
 import { db } from "../util/firebase";
 import { collection, addDoc } from "firebase/firestore";
@@ -29,7 +29,7 @@ const AppointmentBooking = () => {
             formData: formData
           });
           alert("Your message has been sent!");
-          setMessage(""); // Reset message field
+           // Reset message field
         } catch (error) {
           console.error("Error sending message: ", error);
         }

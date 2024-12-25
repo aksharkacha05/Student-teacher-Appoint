@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { db } from "../util/firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import RedirectButton from "./RedirectComponent";
