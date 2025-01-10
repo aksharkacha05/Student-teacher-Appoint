@@ -13,7 +13,3 @@ A modern web application for seamless scheduling of appointments between student
 - Vite
 - CSS (or any other styling framework you used)
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/aksharkacha05/Student-teacher-Appoint.git
